@@ -1,0 +1,57 @@
+.tickets{
+    padding: $separator 0;
+    h3{
+        text-align: center;
+        color: $White;
+    }
+    .tickets-container{
+        margin-top: $separator/2;
+        @include grid(2,$separator)
+    }
+    .plan{
+        p{
+            color: $White;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.pass{
+    width: 100%;
+    border-spacing: 0;
+    thead{
+        background-color: $Pink;
+        th{
+            padding: $separator/4;
+            color: $White;
+            text-transform: uppercase;
+            font-weight: $thin;
+            font-size: 2rem;
+        }
+    }
+    tbody{
+        background-color: $White;
+        td{
+            padding: $separator/4;
+            border-bottom: 1px solid #E1E1E1;
+        }
+        tr{
+            &:last-of-type{
+                td{
+                    border: none;
+                }
+            }
+        }
+    }
+    tfoot{
+        background-color: $Purple;
+        td{
+            padding: $separator/4;
+            text-align: center;
+            font-size: 3rem;
+            color: $White;
+        }
+    }
+}

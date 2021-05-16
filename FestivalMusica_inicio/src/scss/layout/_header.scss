@@ -1,0 +1,39 @@
+.header{
+    background-color: $Green;
+    .header-container{
+        padding: $separator/2 0;
+        @include tablet{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    h1{
+        color: $White;
+        margin-bottom: 1rem;
+        text-align: center;
+        @include tablet{
+            margin-bottom: 0;
+        }
+    }
+
+    &.fixed{
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 .3rem .4rem #444 ;
+    }
+}
+
+.main-nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    a{
+        color: $White;
+        font-size: 2rem;
+        &:hover{
+            color: $Yellow;
+        }
+    }
+    
+}

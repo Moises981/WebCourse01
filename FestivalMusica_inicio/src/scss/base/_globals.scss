@@ -10,6 +10,9 @@ html{
 body{
     font-family: $mainFont;
     font-size: 1.6rem;
+    &.fix-body{
+        overflow: hidden;
+    }
 }
 
 p{
@@ -31,8 +34,13 @@ img{
     max-width: 100%;
 }
 
+h1 , h2 , h3 {
+    margin: 0;
+}
+
 h1{
     font-size: 4rem;
+    font-weight: $blacked;
 }
 
 h2{
@@ -42,3 +50,4 @@ h2{
 h3{
     font-size: 3rem;
 }
+
